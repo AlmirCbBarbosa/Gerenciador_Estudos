@@ -7,6 +7,10 @@
 
 /*valores globais*/
 :root{
+  --alturaTarja:40px;
   --espacoComponente:10px;
   --espacoElemento:5px;
+        /*cores*/
+  --pPreto:#1C1C1C;
+  --pBlue:#4682B4;
 }

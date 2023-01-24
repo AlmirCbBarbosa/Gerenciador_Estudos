@@ -1,0 +1,82 @@
+.loginPrincipal{
+  background-image: url('../img/bgLogin.jpg');
+  background-size:cover;
+  background-position:center;
+  padding-top:10%;
+  height:100vh;
+  max-width:1200px;
+}
+
+/*Recipiente do login*/
+.rcpLogin{
+  background-color:#fff;
+  border-radius:5px;
+  margin:0 auto;
+  max-width:330px;  
+}
+
+.rcpTitulo{
+  background-color:var(--pBlue);
+  border-radius:5px 5px 0 0;
+  height:var(--alturaTarja);
+  max-width:420px;
+}
+
+.rcpTitulo h2{
+  line-height:var(--alturaTarja);
+  text-align:center;  
+}
+
+.logo{  
+  height:200px;  
+  display:block;
+  margin: var(--espacoComponente) auto; 
+}
+
+/*formularioLogin*/
+.formularioLogin{
+  align-items:center;
+  display:flex;
+  flex-direction:column;  
+  margin:0 0 var(--espacoComponente) 0;
+  padding: 0 30px;
+}
+
+.campo{
+  border:none;
+  display:flex;
+  flex-direction:column;
+  font-weight:bold;
+  width:100%;
+}
+
+.campo input{
+    border-radius:3px;
+  outline:none;
+  padding: 2px 5px;
+}
+
+.msgErro{
+  color:white;/* para manter o espaço e ficar invisivel*/
+  font-size:5px;
+  margin-bottom:var(--espacoComponente);
+}
+
+.btnLogar{
+  background-color:var(--pBlue);
+  border:none;
+  border-radius:5px;
+  color:#fff;
+  padding:5px 15px;
+  transition: background .5s;
+}
+
+.btnLogar:hover{
+  background-color:#20527a;
+}
+
+/* mensagem de cadastro*/
+.msgCadastro{ 
+  margin-bottom:30px;
+  padding:0 30px 30px 30px;  
+}
