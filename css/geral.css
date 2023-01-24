@@ -1,0 +1,12 @@
+/*reset*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;  
+}
+
+/*valores globais*/
+:root{
+  --espacoComponente:10px;
+  --espacoElemento:5px;
+}
