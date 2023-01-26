@@ -1,1 +1,4 @@
 *deve se fazer o responsivo abaixo d3 width: 360px, para a tela de login e cadastro.
+
+* nomeclatura:
+quando o script for de uma pagina ao nomear ele vai começar com p(nome da página). Se for um modulo o nome vai ser a função que ele exercer.

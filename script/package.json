@@ -1,0 +1,12 @@
+{
+  "name": "script",
+  "version": "1.0.0",
+  "description": "Projeto de uma plataforma para gerenciamento de estudo, para ajudar na organização de artefatos criados e auxiliar na divisão de tempo que será gasto para estudar cada disciplina, de modo que cada disciplina não fique muito tempo sem estudar.",
+  "main": "pLogin.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Almir de Lima Barbosa",
+  "license": "ISC"
+}

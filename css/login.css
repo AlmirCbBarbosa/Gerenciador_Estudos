@@ -75,9 +75,9 @@
 }
 
 .msgErro{
-  color:white;/* para manter o espaço e ficar invisivel*/
-  font-size:5px;
-  margin-bottom:var(--espacoComponente);
+  color:#fff;/* para manter o espaço e ficar invisivel*/
+  font-size:.75rem;
+  margin-bottom:var(--espacoElemento);
 }
 
 .btnLogar{
