@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cadastro</title>
+    <link rel="icon" type="image/png" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow, noindex">
+    
+    <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+  </head>
+  <body>
+    <main class="cadastroPrincipal">
+      <section class="rcpCadastro">
+        <div class="rcpTitulo">
+          <h2>Cadastro</h2>
+        </div>
+        <form class="formularioCadastro" action="#" method="post" autocomplete="off">
+        
+          <fieldset class="campo">
+            <label for="cadastroNome">Nome:               
+            </label>
+            <input id="cadastroNome" name="cadastroNome" type="text" size="25" minlength="5" maxlength="25"  required placeholder="Digite seu nome">
+            <span class="msgErro">mensagem de erro</span>
+          </fieldset>
+
+          <fieldset class="campo">
+            <label for="cadastroSobrenome">Sobrenome:               
+            </label>
+            <input id="cadastroSobrenome" name="cadastroSobrenome" type="text" size="25" minlength="5" maxlength="25"  required placeholder="Digite seu sobrenome">
+            <span class="msgErro">mensagem de erro</span>
+          </fieldset>
+
+          <fieldset class="campo">
+            <label for="cadastroUsuario">Usuário:               
+            </label>
+            <input id="cadastroUsuario" name="cadastroUsuario" type="text" size="25" minlength="5" maxlength="25"  required placeholder="Crie um usuário">
+            <span class="msgErro">mensagem de erro</span>
+          </fieldset>
+
+          <fieldset class="campo">
+            <label for="cadastroSenha">Senha:               
+            </label>
+            <input id="cadastroSenha" name="cadastroSenha" type="password" size="25" minlength="5" maxlength="25"  required placeholder="Crie uma senha">
+            <span class="msgErro">mensagem de erro</span>
+          </fieldset>
+
+          <fieldset class="campo">
+            <label for="confirmaSenha">Confirmar senha:               
+            </label>
+            <input id="confirmaSenha" name="confirmaSenha" type="password" size="25" minlength="5" maxlength="25"  required placeholder="Confirme a senha">
+            <span class="msgErro">mensagem de erro</span>
+          </fieldset>
+
+          <input class="btnCadastrar" type="submit" value="Cadastrar">
+
+        </form>
+
+        <div class="msgLogin">
+          <p>Realizei o cadastro. Desejo <a href="../login.html">Logar</a></p>
+        </div>        
+      </section>
+    </main>
+  </body>
+</html>

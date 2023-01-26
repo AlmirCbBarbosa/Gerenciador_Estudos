@@ -1,23 +1,22 @@
 /*reset*/
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;  
-}
+    margin:0;
+    padding:0;
+    box-sizing:border-box;  
+  }
+  
+  /*valores globais*/
+  :root{
+    --alturaTarja:40px;
+    --espacoComponente:10px;
+    --espacoElemento:5px;
+          /*cores*/
+    --pPreto:#1C1C1C;
+    --pBlue:#4682B4;
+  }
 
-/*valores globais*/
-:root{
-  --alturaTarja:40px;
-  --espacoComponente:10px;
-  --espacoElemento:5px;
-        /*cores*/
-  --pPreto:#1C1C1C;
-  --pBlue:#4682B4;
-}
-
-
-.loginPrincipal{
-  background-image: url('../img/bgLogin.jpg');
+.cadastroPrincipal{
+  background-image: url('../img/bgCadastro.jpg');
   background-size:cover;
   background-position:center;
   padding-top:10vh;
@@ -25,34 +24,32 @@
   max-width:1200px;
 }
 
-/*Recipiente do login*/
-.rcpLogin{
+
+/*Recipiente do cadastro*/
+.rcpCadastro{
   background-color:#fff;
   border-radius:5px;
   margin:0 auto;
   max-width:330px;  
+  padding-bottom:var(--espacoComponente);
 }
 
 .rcpTitulo{
   background-color:var(--pBlue);
   border-radius:5px 5px 0 0;
   height:var(--alturaTarja);
+  margin-bottom:var(--espacoComponente);
   max-width:420px;
 }
 
 .rcpTitulo h2{
   line-height:var(--alturaTarja);
+  margin-bottom:var(--espacoElemento);
   text-align:center;  
 }
 
-.logo{  
-  height:200px;  
-  display:block;
-  margin: var(--espacoComponente) auto;  
-}
-
-/*formularioLogin*/
-.formularioLogin{
+/*formularioCadastro*/
+.formularioCadastro{
   align-items:center;
   display:flex;
   flex-direction:column;  
@@ -64,7 +61,7 @@
   border:none;
   display:flex;
   flex-direction:column;
-  font-weight:bold;
+  font-weight:bold;  
   width:100%;
 }
 
@@ -80,7 +77,7 @@
   margin-bottom:var(--espacoComponente);
 }
 
-.btnLogar{
+.btnCadastrar{
   background-color:var(--pBlue);
   border:none;
   border-radius:5px;
@@ -88,13 +85,12 @@
   padding:5px 15px;
   transition: background .5s;
 }
-
-.btnLogar:hover{
+  
+.btnCadastrar:hover{
   background-color:#20527a;
 }
 
-/* mensagem de cadastro*/
-.msgCadastro{ 
-  margin-bottom:30px;
-  padding:0 30px 30px 30px;  
+/* mensagem de login*/
+.msgLogin{ 
+  padding:0 30px ;  
 }
