@@ -4,7 +4,9 @@
     *campo esta vazio ok
     *valor minimo de  caractere ok
     *valor maximo de caractere ok
-    *não pode ter espaço (regex)
+    *campo tem espaço em branco ok    
+    *entrada válida para email
+    *senha combinações muito fraca
     
     --------------------------------
     Validação da tela de cadastro
@@ -35,4 +37,18 @@ export function maximoCaractere(iptCampo, maximo){
         return false; 
     }
     return true;
+}
+
+export function temEspaco(campo)
+{    
+    let entrada = campo.value;
+    console.log(entrada);
+    
+    for(let i = 0; i < entrada.length; ++i){
+        console.log(entrada[i]);
+        if(entrada[i] == " "){
+            return true;            
+        }        
+    }
+    return false;
 }
