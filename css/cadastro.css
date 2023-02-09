@@ -73,7 +73,7 @@
 
 .msgErro{
   color:white;/* para manter o espaço e ficar invisivel*/
-  font-size:5px;
+  font-size:.75rem;
   margin-bottom:var(--espacoComponente);
 }
 
