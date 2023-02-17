@@ -68,9 +68,6 @@ const mensagensErro ={//a chave principal são as ids
     
 }
 
-
-console.log(mensagensErro.iptUsuario.valueMissing);
-
 function haEspaco(campo){
     campo.value = campo.value.trim();//tirar os espaços no começo e no fim da string
     const entrada =  campo.value;   

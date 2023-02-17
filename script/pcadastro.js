@@ -23,8 +23,7 @@ iptCampos.forEach((campo)=>{
             }
             
             formularioValidado = true;
-        } 
-        console.log(`O formulario esta validado? ${formularioValidado}`); //apagar
+        }       
         
         if(formularioValidado){
             enviar();
@@ -42,18 +41,16 @@ function enviar(){
         evento.preventDefault();//inibir o comportamento padrão
 
             //capturar os valores de todas as inputs do formulário
-        const entradasFormulario ={ 
-            "nome": evento.target.elements['cadastroNome'].value,
-            "sobrenome": evento.target.elements['cadastroSobrenome'].value,
-            "usuario" : evento.target.elements['cadastroUsuario'].value,
-            "senha" : evento.target.elements['cadastroSenha'].value,//futuramente tirar dados delicados
-            "confirmar senha" : evento.target.elements['confirmaSenha'].value //futuramente tirar dados delicados
-        }
-        localStorage.setItem("cadastro", JSON.stringify(entradasFormulario));// cria um arquivo JSON e o armazena no localStorage do navegador. 
-
-        console.log('dados abaixo');
-        console.log(entradasFormulario);//pode apagar
-        console.log(JSON.stringify(entradasFormulario));//pode apagar
+            const entradasFormulario ={ 
+                "nome": evento.target.elements['cadastroNome'].value,
+                "sobrenome": evento.target.elements['cadastroSobrenome'].value,
+                "usuario" : evento.target.elements['cadastroUsuario'].value,
+                "senha" : evento.target.elements['cadastroSenha'].value,//futuramente tirar dados delicados
+                "confirmar senha" : evento.target.elements['confirmaSenha'].value //futuramente tirar dados delicados
+            }
+        localStorage.setItem("cadastro", JSON.stringify(entradasFormulario));// cria um arquivo JSON e o armazena no localStorage do navegador.
+        console.log("cadastro enviado");//monitoramento
+              
     });
 }   
     
