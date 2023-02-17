@@ -4,9 +4,8 @@
     *campo esta vazio ok
     *valor minimo de  caractere ok
     *valor maximo de caractere ok
-    *campo tem espaço em branco ok    
-    *entrada válida para email
-    *senha combinações muito fraca
+    *campo tem espaço em branco ok   
+   
     
     --------------------------------
     Validação da tela de cadastro

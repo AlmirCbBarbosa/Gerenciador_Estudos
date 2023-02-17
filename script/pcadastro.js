@@ -20,7 +20,7 @@ iptCampos.forEach((campo)=>{
         for(const campos in camposValidados){
             if(!camposValidados[campos]){
                 formularioValidado = false;
-                break;
+                break;//para para a iteração nos elementos do objeto
             }
             
             formularioValidado = true;
@@ -35,8 +35,6 @@ iptCampos.forEach((campo)=>{
         evento.preventDefault(); //quando for apertado o submit e os valor do campo for invalido será acionado o cancelamento do comportamento padrão       
     });
 });
-
-
 
 
 function enviar(){

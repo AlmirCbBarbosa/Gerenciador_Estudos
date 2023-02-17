@@ -15,7 +15,8 @@ const tiposErrosApi =[
 ]
 
 const tiposErroPersonalizados = [
-    "haEspaco"
+    "haEspaco",
+    "ehDiferente"
 ]
 
 
@@ -47,7 +48,8 @@ const mensagensErro ={//a chave principal são as ids
     "confirmaSenha":{
         "tooShort":"Coloque 5 ou mais caracteres no campo confirmar senha.",
         "tooLong":"Coloque 25 ou menos caracteres no campo confirmar senha.",
-        "valueMissing":"Preencha o campo de confirmar senha."
+        "valueMissing":"Preencha o campo de confirmar senha.",
+        "ehDiferente" :"O campo confirma senha é diferente de senha."
     },
 
     
@@ -61,12 +63,14 @@ function haEspaco(campo){
 
 
 
-
+let senha = "";//armazena o valor da senha para comparar com confirmar senha
 export function validarCampo(campo){//função que valida as entradas
     campo.setCustomValidity('');
     let mensagem = "";
     let apiValidou = false;
     let desenvolvedorValidou = true;
+    
+        
 
     tiposErrosApi.every((erro)=>{ // itera ate encontar alguma erro e não executa outros testes, senão encontra nenhum erro passo por todos os testes
         if(campo.validity[erro]){
@@ -83,15 +87,26 @@ export function validarCampo(campo){//função que valida as entradas
     //----------testes personalizados---------//
     //se passar por todos os testes da api será realizados estes
     if(apiValidou && (campo.name == "cadastroNome" || campo.name == "cadastroUsuario" || campo.name == "cadastroSenha")){        
+        
         if(haEspaco(campo)){
             mensagem = mensagensErro[campo.name]["haEspaco"];
-            desenvolvedorValidou = false;
-        }
-        else{
-            desenvolvedorValidou = true;
-        }    
-    }
+            desenvolvedorValidou = false;            
+        } 
 
+        if(campo.name == "cadastroSenha"){
+            senha = campo.value;
+            console.log("O valor da senha é: " + senha);//pode apagar
+        }          
+    }
+    else if(campo.name == "confirmaSenha" && campo.value != senha){
+        mensagem = mensagensErro[campo.name]["ehDiferente"];
+        desenvolvedorValidou = false;
+        console.log("O valor da senha é: " + senha);//pode apagar
+        console.log("O valor de confirma senha é: " + campo.value);//pode apagar
+    }
+    else{
+        desenvolvedorValidou = true;
+    }
 
 
 
