@@ -1,0 +1,44 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;  
+  }
+  
+  /*valores globais*/
+  :root{
+    --alturaTarja:40px;
+    --espacoComponente:10px;
+    --espacoElemento:5px;
+
+    --espacamentoVertical:5px;
+    --espacamentoLateral:15px;
+          /*cores*/
+    --pPreto:#1C1C1C;
+    --pBlue:#4682B4;
+  }
+
+
+  .rcpCabecalho{
+    background-color: var(--pBlue);
+    color: var(--pPreto);
+    padding: var(--espacamentoVertical) var(--espacamentoLateral);
+    text-align:center;
+  }
+
+  .rcpMenuLinks{
+    text-align:left;
+  }
+
+  .rcpMenuLinks ul{
+    list-style:none;
+  }
+
+  .rcpMenuLinks__link{
+    text-decoration:none;
+    transition: color .5s;
+  }
+
+  .rcpMenuLinks__link:hover{
+    color:white;
+  }
