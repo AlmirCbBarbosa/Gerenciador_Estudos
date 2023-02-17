@@ -52,8 +52,24 @@ const mensagensErro ={//a chave principal são as ids
         "ehDiferente" :"O campo confirma senha é diferente de senha."
     },
 
+    "iptUsuario":{
+        "tooShort":"Coloque 5 ou mais caracteres no campo usuário.",
+        "tooLong":"Coloque 25 ou menos caracteres no campo usuário.",
+        "valueMissing":"Preencha o campos de usuário.",
+        "haEspaco":"Não pode haver espaço no campo de usuário."
+    },
+    "iptSenha":{
+        "tooShort":"Coloque 5 ou mais caracteres no campo senha.",
+        "tooLong":"Coloque 25 ou menos caracteres no campo senha.",
+        "valueMissing":"Preencha o campos de senha.",
+        "haEspaco":"Não pode haver espaço no campo senha."
+    }
+
     
 }
+
+
+console.log(mensagensErro.iptUsuario.valueMissing);
 
 function haEspaco(campo){
     campo.value = campo.value.trim();//tirar os espaços no começo e no fim da string
@@ -86,7 +102,7 @@ export function validarCampo(campo){//função que valida as entradas
 
     //----------testes personalizados---------//
     //se passar por todos os testes da api será realizados estes
-    if(apiValidou && (campo.name == "cadastroNome" || campo.name == "cadastroUsuario" || campo.name == "cadastroSenha")){        
+    if(apiValidou && (campo.name == "cadastroNome" || campo.name == "cadastroUsuario" || campo.name == "cadastroSenha" || campo.name == "iptUsuario" || campo.name == "iptSenha")){        
         
         if(haEspaco(campo)){
             mensagem = mensagensErro[campo.name]["haEspaco"];

@@ -2,6 +2,7 @@ import * as validacao from "./validacaoCadastro.js";
 
 const iptCampos = document.querySelectorAll('[required]');
 const formulario = document.querySelector('[data-cadastroFormulario]');
+let formularioValidado = false;
 const camposValidados = {
     "cadastroNome" : false,
     "cadastroSobrenome" : false,
@@ -9,8 +10,6 @@ const camposValidados = {
     "cadastroSenha" : false,
     "confirmaSenha" : false
 }
-
-let formularioValidado = false;
 
 
 iptCampos.forEach((campo)=>{    
@@ -31,6 +30,7 @@ iptCampos.forEach((campo)=>{
             enviar();
         }
     });
+    
     campo.addEventListener('invalid', (evento)=>{
         evento.preventDefault(); //quando for apertado o submit e os valor do campo for invalido será acionado o cancelamento do comportamento padrão       
     });
