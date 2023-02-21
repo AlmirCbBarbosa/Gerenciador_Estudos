@@ -1,3 +1,5 @@
+*1200px de largura máxima de tela
+
 *deve se fazer o responsivo abaixo d3 width: 360px, para a tela de login e cadastro.
 
 * nomeclatura:

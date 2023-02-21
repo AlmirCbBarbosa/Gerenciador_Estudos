@@ -18,29 +18,116 @@
             </ul>
         </nav>
     </header>
-    <main>
-      <section class="secTabela">
-        <table class="rcpTabela">
-          <thead class="rcpTabela__cabecalho">
-            <th>Data</th>
-            <th class="celulas">Disciplina</th>
-            <th>Tópico</th>
-            <th>Fonte</th>
-            <th>Classificação</th>
-            <th>Observação</th>
-            <th>Artefato</th>
-            <th>Opções</th>
-          </thead>
-          <tbhdy>
-            
-          </tbhdy>
-        </table>
-      </section>
-      <section class="secInformacoes">
+    <main class="principal">
+      <section class="sctAulas">
+        <div class="rcpAula">
+          <div class="rcpCamposAula">
+            <div class="entradaData">
+              <label for="iptAulaData">Data</label>
+              <input type="date" id="iptAulaData" name="iptAulaData" required>
+            </div>
 
-      </section>
-      
+            <div class="entradaDisciplina">
+              <label for="iptDisciplina">Disciplina</label>
+              <select id="iptDisciplina" name="iptDisciplina">
+                <option value="js">JavaScript</option>
+                <option value="Html">Html</option>
+              </select>
+            </div>
 
+            <div class="entradaFonte">
+              <label for="iptFonte">Fonte</label>
+              <select id="iptFonte" name="iptFonte">
+                <option value="livro1">Livro1</option>
+                <option value="livro2">Livro2</option>
+              </select>
+            </div>
+
+            <div class="entradaTopico">
+              <label for="iptTopico">Tópico</label>
+              <select id="iptTopico" name="iptTopico">
+                <option value="assunto1">assunto1</option>
+                <option value="assunto2">assunto2</option>
+              </select>
+            </div>
+
+            <div class="entradaStatus">
+              <label for="iptStatus">Status</label>
+              <select id="iptStatus" name="iptS
+              tatus">
+                <option value="andamento">em andamento</option>
+                <option value="finalizado">finalizado</option>
+                <option value="Ordinario">ordinário</option>
+                <option value="revisado">revisado</option> 
+              </select>
+            </div>
+
+            <div class="aulaOpcoes">              
+              <div class="aulaOpcoes__opcao">
+                <img id="aulaOpcoes-opcao__adicionarObservacao" src="#" title="adicionar nova observação" alt="icone acrescentar observação">
+              </div>
+
+              <div class="aulaOpcoes__opcao">
+                <img id="aulaOpcoes-opcao__adicionarArtefato" src="#" title="adicionar novo artefato" alt="icone acrescenta artefato">
+              </div> 
+              
+              <div class="aulaOpcoes__opcao">
+                <img id="aulaOpcoes-opcao__editar" src="#" title="editar campos desta aula" alt="icone editar aula">
+              </div>
+
+              <div class="aulaOpcoes__opcao">
+                <img id="aulaOpcoes-opcao__excluir" src="#" title="exluir esta aula" alt="icone excluir aula">
+              </div>
+            </div>
+          </div>
+          
+          <div class="informacoesAula">
+            <div class="informacoesAula__opcoes">
+              <p class="informacoesAula-opcoes__opcao">Observações</p>
+              <p class="informacoesAula-opcoes__opcao">Artefatos</p>
+            </div>
+            <div class="informacoesAula__tabela">
+              <table class="TabelaObservacoes">
+                <caption>Lista de Observações</caption>
+                <thead>
+                  <th>Data</th>
+                  <th>Resumo</th>
+                  <th>Opcões</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22/08/2020</td>
+                    <td>lala la la la la</td>
+                    <td> ver excluir</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="TabelaArtefatos">
+                <caption>Lista de Artefatos</caption>
+                <thead>
+                  <th>Data</th>
+                  <th>Titulo</th>
+                  <th>Tipo</th>
+                  <th>Endereço</th>
+                  <th>Opcões</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22/08/2020</td>
+                    <td>Array</td>
+                    <td>Mapa mental</td>
+                    <td>./estudos/mapa_mental/array.jpg</td>
+                    <td> ver excluir</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section class="seclateral">
+      </section>
     </main>
   </body>
 </html>

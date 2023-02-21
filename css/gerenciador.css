@@ -19,6 +19,8 @@
   }
 
 
+
+  /*-----Cabecalho-----*/
   .rcpCabecalho{
     background-color: var(--pBlue);
     color: var(--pPreto);
@@ -42,3 +44,4 @@
   .rcpMenuLinks__link:hover{
     color:white;
   }
+/*-----fim Cabecalho-----*/
