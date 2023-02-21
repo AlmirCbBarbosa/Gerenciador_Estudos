@@ -45,3 +45,94 @@
     color:white;
   }
 /*-----fim Cabecalho-----*/
+
+/*-----Principal------*/
+.principal{ 
+  display:flex; 
+  background-color:bisque;
+  max-width:1200px;
+  width:100%  
+}
+
+
+/*-----SectAulas-----*/
+.sctAulas{
+  background-color:rgb(219, 204, 204);
+  width:100%;
+}
+
+.sctAulas__titulo{
+  text-align:center;
+  
+}
+
+
+
+/*-----rcpAula-----*/
+.rcpAula{
+  max-width:1000px;
+  width:100%; 
+}
+.rcpCamposAula{
+  align-items:end;
+  display:flex;
+  justify-content: space-between;
+  padding: var(--espacamentoVertical) var(--espacamentoLateral);
+}
+
+.rcpCamposAula__div{  
+  display:flex;
+  flex-direction: column;  
+}
+
+.rcpCamposAula__entrada{
+  width:100px;  
+}
+
+.rcpCamposAula__entrada--aumentado{
+  width:150px; 
+}
+
+.rcpAula__btnInformacoes{
+  display:block;
+  margin: 0 var(--espacamentoLateral);
+  width:100%;
+}
+
+/*-----informações Aula-----*/
+.rcpInformacoesAula{
+  display:flex;
+  justify-content:space-between;
+  padding: var(--espacamentoVertical) var(--espacamentoLateral);
+}
+
+.rcpInformacoesAula__observacao{
+  display:flex;
+  flex-direction:column;
+  margin-right:5px;
+}
+
+.rcpInformacoesaula-observacao__iptObservacao{
+  height:200px;
+  width:250px;
+}
+
+
+/*--------------artefatos-------------*/
+.tabelaArtefatos__celula{
+  border: 1px solid var(--pPreto);
+  border-collapse:collapse;
+  width:100px;
+}
+
+.tabelaArtefatos__celula--aumentada{
+  border: 1px solid var(--pPreto);
+  border-collapse:collapse;
+  width:250px;
+}
+
+.tabelaArtefatos__celula--reduzida{
+  border: 1px solid var(--pPreto);  
+  border-collapse:collapse;
+  width:30px;
+}

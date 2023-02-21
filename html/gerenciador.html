@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Cadastro</title>
+    <title>Gerenciador</title>
     <link rel="icon" type="image/png" href="#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,114 +20,79 @@
     </header>
     <main class="principal">
       <section class="sctAulas">
+        <h2 class="sctAulas__titulo">Aulas realizadas</h2>
         <div class="rcpAula">
           <div class="rcpCamposAula">
-            <div class="entradaData">
+            <div class="entradaData rcpCamposAula__div">
               <label for="iptAulaData">Data</label>
-              <input type="date" id="iptAulaData" name="iptAulaData" required>
+              <input type="date" id="iptAulaData" class="rcpCamposAula__entrada" name="iptAulaData" required>
             </div>
 
-            <div class="entradaDisciplina">
+            <div class="entradaDisciplina rcpCamposAula__div">
               <label for="iptDisciplina">Disciplina</label>
-              <select id="iptDisciplina" name="iptDisciplina">
+              <select id="iptDisciplina"  name="iptDisciplina" class="rcpCamposAula__entrada--aumentado">
                 <option value="js">JavaScript</option>
                 <option value="Html">Html</option>
               </select>
             </div>
 
-            <div class="entradaFonte">
+            <div class="entradaFonte rcpCamposAula__div">
               <label for="iptFonte">Fonte</label>
-              <select id="iptFonte" name="iptFonte">
+              <select id="iptFonte" name="iptFonte" class="rcpCamposAula__entrada--aumentado">
                 <option value="livro1">Livro1</option>
                 <option value="livro2">Livro2</option>
               </select>
             </div>
 
-            <div class="entradaTopico">
+            <div class="entradaTopico rcpCamposAula__div" >
               <label for="iptTopico">Tópico</label>
-              <select id="iptTopico" name="iptTopico">
+              <select id="iptTopico" name="iptTopico" class="rcpCamposAula__entrada--aumentado">
                 <option value="assunto1">assunto1</option>
                 <option value="assunto2">assunto2</option>
               </select>
             </div>
 
-            <div class="entradaStatus">
+            <div class="entradaStatus rcpCamposAula__div" >
               <label for="iptStatus">Status</label>
               <select id="iptStatus" name="iptS
-              tatus">
-                <option value="andamento">em andamento</option>
+              tatus" class="rcpCamposAula__entrada">
+                <option value="andamento">continuar</option>
                 <option value="finalizado">finalizado</option>
                 <option value="Ordinario">ordinário</option>
                 <option value="revisado">revisado</option> 
               </select>
-            </div>
-
-            <div class="aulaOpcoes">              
-              <div class="aulaOpcoes__opcao">
-                <img id="aulaOpcoes-opcao__adicionarObservacao" src="#" title="adicionar nova observação" alt="icone acrescentar observação">
-              </div>
-
-              <div class="aulaOpcoes__opcao">
-                <img id="aulaOpcoes-opcao__adicionarArtefato" src="#" title="adicionar novo artefato" alt="icone acrescenta artefato">
-              </div> 
-              
-              <div class="aulaOpcoes__opcao">
-                <img id="aulaOpcoes-opcao__editar" src="#" title="editar campos desta aula" alt="icone editar aula">
-              </div>
-
-              <div class="aulaOpcoes__opcao">
-                <img id="aulaOpcoes-opcao__excluir" src="#" title="exluir esta aula" alt="icone excluir aula">
-              </div>
-            </div>
+            </div>            
           </div>
-          
-          <div class="informacoesAula">
-            <div class="informacoesAula__opcoes">
-              <p class="informacoesAula-opcoes__opcao">Observações</p>
-              <p class="informacoesAula-opcoes__opcao">Artefatos</p>
+          <button class="rcpAula__btnInformacoes">-------abrir as informações-------</button>
+          <div class="rcpInformacoesAula">            
+            <div class="rcpInformacoesAula__observacao">
+              <label for="iptObservacao">Observação</label>
+              <textarea name="iptObservacao" id="iptObservacao" class="rcpInformacoesaula-observacao__iptObservacao" cols="30" rows="10"></textarea>
             </div>
-            <div class="informacoesAula__tabela">
-              <table class="TabelaObservacoes">
-                <caption>Lista de Observações</caption>
-                <thead>
-                  <th>Data</th>
-                  <th>Resumo</th>
-                  <th>Opcões</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>22/08/2020</td>
-                    <td>lala la la la la</td>
-                    <td> ver excluir</td>
-                  </tr>
-                </tbody>
-              </table>
 
+            <div>
               <table class="TabelaArtefatos">
-                <caption>Lista de Artefatos</caption>
-                <thead>
-                  <th>Data</th>
-                  <th>Titulo</th>
-                  <th>Tipo</th>
-                  <th>Endereço</th>
-                  <th>Opcões</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>22/08/2020</td>
-                    <td>Array</td>
-                    <td>Mapa mental</td>
-                    <td>./estudos/mapa_mental/array.jpg</td>
-                    <td> ver excluir</td>
-                  </tr>
-                </tbody>
-              </table>
+                  <caption>Lista de Artefatos</caption>
+                  <thead>                    
+                    <th class="tabelaArtefatos__celula">Titulo</th>
+                    <th class="tabelaArtefatos__celula">Tipo</th>
+                    <th class="tabelaArtefatos__celula--aumentada">Endereço</th>
+                    <th class="tabelaArtefatos__celula" colspan="2">Opcões</th>
+                  </thead>
+                  <tbody>
+                    <tr>                      
+                      <td class="tabelaArtefatos__celula">Array</td>
+                      <td class="tabelaArtefatos__celula">Mapa mental</td>
+                      <td class="tabelaArtefatos__celula--aumentada">./estudos/mapa_mental/array.jpg</td>
+                      <td class="tabelaArtefatos__celula--reduzida"> ver </td>
+                      <td class="tabelaArtefatos__celula--reduzida">excluir</td>
+                    </tr>
+                  </tbody>
+              </table>              
             </div>
           </div>          
         </div>
-      </section>
-      <section class="seclateral">
-      </section>
+      </section>      
     </main>
   </body>
 </html>
