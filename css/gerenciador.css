@@ -58,6 +58,7 @@
 /*-----SectAulas-----*/
 .sctAulas{
   background-color:rgb(219, 204, 204);
+  padding:0 var(--espacamentoLateral);
   width:100%;
 }
 
@@ -70,19 +71,23 @@
 
 /*-----rcpAula-----*/
 .rcpAula{
+  border: 1px solid var(--pPreto);
+  border-radius:5px;
   max-width:1000px;
+  padding:var(--espacamentoVertical) 0;
   width:100%; 
 }
 .rcpCamposAula{
   align-items:end;
   display:flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   padding: var(--espacamentoVertical) var(--espacamentoLateral);
 }
 
 .rcpCamposAula__div{  
   display:flex;
-  flex-direction: column;  
+  flex-direction: column; 
+  margin:var(--espacoElemento);
 }
 
 .rcpCamposAula__entrada{
@@ -95,21 +100,21 @@
 
 .rcpAula__btnInformacoes{
   display:block;
-  margin: 0 var(--espacamentoLateral);
+  padding: 2px 0; 
   width:100%;
 }
 
 /*-----informações Aula-----*/
 .rcpInformacoesAula{
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-start;
   padding: var(--espacamentoVertical) var(--espacamentoLateral);
 }
 
 .rcpInformacoesAula__observacao{
   display:flex;
   flex-direction:column;
-  margin-right:5px;
+  margin-right:var(--espacoComponente);
 }
 
 .rcpInformacoesaula-observacao__iptObservacao{
@@ -118,21 +123,48 @@
 }
 
 
-/*--------------artefatos-------------*/
+/*--------------tabelaArtefatos-------------*/
+.tabelaArtefatos{
+  border-collapse: collapse;  
+}
+
+.tabelaArtefatos__titulo{
+  background-color:var(--pBlue);
+  border: 1px solid var(--pPreto);
+  padding:2px; 
+}
+
 .tabelaArtefatos__celula{
-  border: 1px solid var(--pPreto);
-  border-collapse:collapse;
+  border: 1px solid var(--pPreto);    
   width:100px;
+  padding:2px; 
 }
-
+  
 .tabelaArtefatos__celula--aumentada{
-  border: 1px solid var(--pPreto);
-  border-collapse:collapse;
+  border: 1px solid var(--pPreto);    
   width:250px;
+  padding:2px; 
+}
+  
+.tabelaArtefatos__celula--reduzida{
+  border: 1px solid var(--pPreto);   
+  width:32px;
+  padding:2px; 
 }
 
-.tabelaArtefatos__celula--reduzida{
-  border: 1px solid var(--pPreto);  
-  border-collapse:collapse;
-  width:30px;
+.tabelaArtefatos-celula__icone{
+  display:block;
+  margin:0 auto;   
+  width:24px;
+}
+
+.btnAdicionarArtefatos{
+  background-color:transparent;
+  border:none;
+  display:block;
+  margin: var(--espacoElemento) auto;
+}
+
+.btnAdicionarArtefatos img{
+  width:36px;
 }

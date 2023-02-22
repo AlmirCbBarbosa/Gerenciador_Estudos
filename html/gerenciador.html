@@ -63,7 +63,9 @@
               </select>
             </div>            
           </div>
+
           <button class="rcpAula__btnInformacoes">-------abrir as informações-------</button>
+          
           <div class="rcpInformacoesAula">            
             <div class="rcpInformacoesAula__observacao">
               <label for="iptObservacao">Observação</label>
@@ -71,27 +73,35 @@
             </div>
 
             <div>
-              <table class="TabelaArtefatos">
-                  <caption>Lista de Artefatos</caption>
-                  <thead>                    
-                    <th class="tabelaArtefatos__celula">Titulo</th>
-                    <th class="tabelaArtefatos__celula">Tipo</th>
-                    <th class="tabelaArtefatos__celula--aumentada">Endereço</th>
-                    <th class="tabelaArtefatos__celula" colspan="2">Opcões</th>
-                  </thead>
-                  <tbody>
-                    <tr>                      
-                      <td class="tabelaArtefatos__celula">Array</td>
-                      <td class="tabelaArtefatos__celula">Mapa mental</td>
-                      <td class="tabelaArtefatos__celula--aumentada">./estudos/mapa_mental/array.jpg</td>
-                      <td class="tabelaArtefatos__celula--reduzida"> ver </td>
-                      <td class="tabelaArtefatos__celula--reduzida">excluir</td>
-                    </tr>
-                  </tbody>
-              </table>              
+              <table class="tabelaArtefatos">
+                <caption class="tabelaArtefatos__titulo">Lista de Artefatos</caption>
+                <thead>
+                  <tr>                    
+                  <th class="tabelaArtefatos__celula">Titulo</th>
+                  <th class="tabelaArtefatos__celula">Tipo</th>
+                  <th class="tabelaArtefatos__celula--aumentada">Endereço</th>
+                  <th class="tabelaArtefatos__celula--reduzida" colspan="2">Opcões</th>
+                  </tr>        
+                </thead>
+                <tbody>
+                  <tr>                      
+                    <td class="tabelaArtefatos__celula">Array</td>
+                    <td class="tabelaArtefatos__celula">Mapa mental</td>
+                    <td class="tabelaArtefatos__celula--aumentada">./estudos/mapa_mental/array.jpg</td>
+                    <td class="tabelaArtefatos__celula--reduzida"> 
+                      <img class="tabelaArtefatos-celula__icone" src="../icons/icone_abrir_arquivo.svg" alt="olho" title="abrir o artefato"> 
+                    </td>
+                    <td class="tabelaArtefatos__celula--reduzida">  
+                      <img class="tabelaArtefatos-celula__icone" src="../icons/icone_excluir.svg" alt="lixeira" title="excluir artefato">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <button class="btnAdicionarArtefatos"><img src="../icons/icone_adicionar.svg" alt="simbolo de adição" title="adicionar novo artefato"></button>
             </div>
           </div>          
-        </div>
+        </div><!--nada-->
       </section>      
     </main>
   </body>
