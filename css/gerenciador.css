@@ -168,3 +168,31 @@
 .btnAdicionarArtefatos img{
   width:36px;
 }
+
+/*-----ManterAula*/
+.rcpManterAula{  
+  display:block;
+  margin: var(--espacoElemento) auto;
+  width: 205px;
+}
+
+.rcpManterAula__botao{  
+  border-radius: 5px;
+  color:var(--pPreto);
+  margin: 0 5px;
+  padding: 2px;
+  transition: color 0.5s;
+  width: 90px;
+}
+
+.rcpManterAula__botao:hover{
+  color:white;
+}
+
+.rcpManterAula__botao--verde{
+  background: #07d607;
+}
+
+.rcpManterAula__botao--vermelho{
+  background-color: #cc0707;
+}
