@@ -16,6 +16,7 @@
           /*cores*/
     --pPreto:#1C1C1C;
     --pBlue:#4682B4;
+    --pCinza:#CDCDCD;
   }
 
 
@@ -57,7 +58,7 @@
 
 /*-----SectAulas-----*/
 .sctAulas{
-  background-color:rgb(219, 204, 204);
+  background-color:white;
   padding:0 var(--espacamentoLateral);
   width:100%;
 }
@@ -71,8 +72,10 @@
 
 /*-----rcpAula-----*/
 .rcpAula{
+  background-color:var(--pCinza);
   border: 1px solid var(--pPreto);
   border-radius:5px;
+  margin-bottom: var(--espacoElemento);
   max-width:1000px;
   padding:var(--espacamentoVertical) 0;
   width:100%; 
@@ -80,6 +83,7 @@
 .rcpCamposAula{
   align-items:end;
   display:flex;
+  flex-wrap: wrap;
   justify-content:flex-start;
   padding: var(--espacamentoVertical) var(--espacamentoLateral);
 }
@@ -99,15 +103,19 @@
 }
 
 .rcpAula__btnInformacoes{
-  display:block;
-  padding: 2px 0; 
+  display:block;  
   width:100%;
+}
+
+.rcpAula__btnInformacoes img{
+  height:24px;
 }
 
 /*-----informações Aula-----*/
 .rcpInformacoesAula{
   display:flex;
-  justify-content:flex-start;
+  flex-wrap: wrap;
+  justify-content:flex-start;  
   padding: var(--espacamentoVertical) var(--espacamentoLateral);
 }
 
@@ -126,6 +134,7 @@
 /*--------------tabelaArtefatos-------------*/
 .tabelaArtefatos{
   border-collapse: collapse;  
+  margin-top: var(--espacoElemento);
 }
 
 .tabelaArtefatos__titulo{
@@ -196,3 +205,17 @@
 .rcpManterAula__botao--vermelho{
   background-color: #cc0707;
 }
+
+/*-------fim rcp Aula-------*/
+
+
+/*------sct__btnAdicionarAula-----*/
+.sctAulas__btnAdicionarAula{
+  display:block;
+  margin: var(--espacoComponente) auto;
+}
+
+.sctAulas__btnAdicionarAula img{
+  height:36px;
+}
+
